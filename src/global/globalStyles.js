@@ -24,6 +24,7 @@ html {
   --whitest: #FAFAFA;
 
   --red: #FF3F3F;
+  --pink-red:#FF2957;
 
   --img-bg: #E7DDDD;
 

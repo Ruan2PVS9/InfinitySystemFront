@@ -79,3 +79,12 @@ export const Column = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+export const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 1rem 2rem;
+`;

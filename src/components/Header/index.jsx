@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Search } from "../Search/index";
 import { Drawer } from "../Drawer/index";
-import { Wrapper, Content, Row, Icon, Link, Cart, CloseBtn } from "./style";
+import { Wrapper, Content, Row, Icon, Sign, Cart, CloseBtn } from "./style";
 
 export const Header = () => {
   const [cart, setCart] = useState(false);
@@ -18,10 +18,10 @@ export const Header = () => {
           <Row>
             <Icon src="/icons/Logo.svg" />
             <Search />
-            <Link>
+            <Sign to ="/signin">
               <img src="/icons/User.svg" alt="" />
               Entrar / Cadastrar
-            </Link>
+            </Sign>
             <Cart onClick={() => ToggleCart()}>
               <img src="/icons/Cart.svg" alt="" />
             </Cart>

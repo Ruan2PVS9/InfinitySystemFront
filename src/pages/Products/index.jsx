@@ -11,6 +11,7 @@ import {
   Title,
   CardContainer,
   Column,
+  Row
 } from "./style";
 
 export const Products = () => {
@@ -29,8 +30,7 @@ export const Products = () => {
             <h1>Produtos</h1>
             <hr />
           </Title>
-          <Column>
-            <CardContainer>
+          <Row>
               <Card
                 product_id="1"
                 name="Aroma Ambiente"
@@ -55,8 +55,6 @@ export const Products = () => {
                 description="Aroma de Morango"
                 price="14,00"
               />
-            </CardContainer>
-            <CardContainer>
               <Card
                 product_id="1"
                 name="Aroma Ambiente"
@@ -81,8 +79,7 @@ export const Products = () => {
                 description="Aroma de Morango"
                 price="14,00"
               />
-            </CardContainer>
-          </Column>
+            </Row>
         </Content>
         <Footer/>
       </Body>

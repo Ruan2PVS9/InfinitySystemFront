@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom"
+
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -36,7 +38,7 @@ export const Icon = styled.img`
   width: 10rem;
 `;
 
-export const Link = styled.a`
+export const Sign = styled(Link)`
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -50,7 +52,7 @@ export const Link = styled.a`
   }
 `;
 
-export const SmallLink = styled(Link)`
+export const SmallLink = styled.a`
   font-size: 1.5rem;
   gap: 0.3rem;
   color: var(--black);

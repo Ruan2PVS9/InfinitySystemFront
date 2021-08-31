@@ -1,5 +1,5 @@
 import React from "react";
-import { Products } from "./pages/Products/index";
+import { Routes } from "./routes/routes"
 import GlobalStyleProvider from "./global/globalStyles";
 
 
@@ -22,7 +22,8 @@ function App() {
       pauseOnHover
     />
       <GlobalStyleProvider />
-      <Products />
+      <Routes />
+
       
     </>
   );
