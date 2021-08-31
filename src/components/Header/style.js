@@ -71,3 +71,21 @@ export const Cart = styled.button`
     width: 4rem;
   }
 `;
+
+export const CloseBtn = styled.button`
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  margin-bottom: 0.7rem;
+  color: var(--color-header);
+  font-size: 2.4rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--pink);
+  }
+`;
