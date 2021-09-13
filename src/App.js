@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes } from "./routes/routes"
 import GlobalStyleProvider from "./global/globalStyles";
-
+import { ProductsProvider } from "./provider/Contexts/ProductsContext";
 
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
@@ -21,8 +21,10 @@ function App() {
       draggable
       pauseOnHover
     />
+    <ProductsProvider>
       <GlobalStyleProvider />
       <Routes />
+    </ProductsProvider>
 
       
     </>

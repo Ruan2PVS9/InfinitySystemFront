@@ -32,8 +32,8 @@ background-color: var(--white);
 `;
 
 export const Icon = styled.img`
-  width: 10rem;
-  height: 10rem;
+  width: 10em;
+  height: 10em;
   margin-bottom: 3rem;
 `;
 

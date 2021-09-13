@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Search } from "../Search/index";
 import { Drawer } from "../Drawer/index";
 import { Wrapper, Content, Row, Icon, Sign, Cart, CloseBtn } from "./style";
 
-export const Header = () => {
+export const Header = (props) => {
   const [cart, setCart] = useState(false);
   const ToggleCart = () => setCart(!cart);
   return (
@@ -17,7 +16,7 @@ export const Header = () => {
         <Content>
           <Row>
             <Icon src="/icons/Logo.svg" />
-            <Search />
+            {props.children}
             <Sign to ="/signin">
               <img src="/icons/User.svg" alt="" />
               Entrar / Cadastrar
