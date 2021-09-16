@@ -4,16 +4,9 @@ import { Card } from "../../components/Card/index";
 import { Footer } from "../../components/Footer/index"
 import { Search } from "../../components/Search";
 import { useProducts } from "../../hooks/useProducts";
-import {
-  Content,
-  Body,
-  Banner,
-  Wave,
-  Title,
-  // CardContainer,
-  // Column,
-  Row
-} from "./style";
+import {useCart} from "../../hooks/useCart";
+
+import {Content,Body,Banner,Wave, Title, Row} from "./style";
 
 
 export const Products = () => {
@@ -24,7 +17,7 @@ export const Products = () => {
   }, [fetchProducts]);
 
   const Produtos=listProducts()
-  console.log(Produtos)
+  
 
 
   return (
@@ -62,54 +55,7 @@ export const Products = () => {
                 >
                 </Card>
               ))}
-              <Card
-                product_id="1"
-                name="Aroma Ambiente"
-                description="Aroma de Morango"
-                price="11,00"
-              />
-              <Card
-                product_id="2"
-                name="Aroma Ambiente..."
-                description="Aroma de Morango"
-                price="12,00"
-              />
-              <Card
-                product_id="3"
-                name="Aroma Ambiente"
-                description="Aroma de Banana"
-                price="13,00"
-              />
-              <Card
-                product_id="4"
-                name="Aroma Ambiente..."
-                description="Aroma de Morango"
-                price="14,00"
-              />
-              <Card
-                product_id="1"
-                name="Aroma Ambiente"
-                description="Aroma de Morango"
-                price="11,00"
-              />
-              <Card
-                product_id="2"
-                name="Aroma Ambiente..."
-                description="Aroma de Morango"
-                price="12,00"
-              />
-              <Card
-                product_id="3"
-                name="Aroma Ambiente"
-                description="Aroma de Banana"
-                price="13,00"
-              />
-              <Card
-                product_id="5"
-                name="Aroma Ambiente..."
-                description="Aroma de Morango"
-                price="14,00"
-              />
+             
             </Row>
         </Content>
         <Footer/>

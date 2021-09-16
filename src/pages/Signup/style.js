@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
-
 export const Body = styled.div`
   width: 100vw;
   display: flex;
@@ -29,7 +28,7 @@ justify-content: space-around;
 align-items: center;
 position: relative;
 width: 60%;
-height: 60%;
+height: 80%;
 background-color: var(--white);
 `;
 
@@ -100,11 +99,6 @@ export const Arrow = styled(Link)`
     filter: brightness(1.2);
   }
 `;
-export const Signup = styled(Link)`
-  cursor: pointer;
-  text-align: center;
-
-`
 
 export const InputDiv = styled.div`
   width: 100%;

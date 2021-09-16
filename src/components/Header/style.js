@@ -51,6 +51,10 @@ export const Sign = styled(Link)`
     width: 2.2rem;
   }
 `;
+export const Signout= styled.button`
+ background-color: transparent;
+  cursor: pointer;
+`;
 
 export const SmallLink = styled.a`
   font-size: 1.5rem;

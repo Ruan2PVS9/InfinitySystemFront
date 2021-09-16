@@ -78,7 +78,7 @@ export const Row = styled.div`
 `;
 
 export const Button = styled.button`
-  width: 48%;
+  width: 100%;
   height: 3.5rem;
   align-items: center;
   text-align: center;
@@ -97,12 +97,5 @@ export const Button = styled.button`
   }
 `;
 
-export const OutlineButton = styled(Button)`
-  background-color: transparent;
-  border: 1px solid var(--pink);
 
-  &:hover {
-    border: 1px solid var(--pink);
-    background-color: var(--pink);
-  }
-`;
+

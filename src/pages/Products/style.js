@@ -87,4 +87,5 @@ export const Row = styled.div`
   justify-content: center;
   flex-grow: 1;
   padding: 1rem 2rem;
+  min-height:30rem;
 `;

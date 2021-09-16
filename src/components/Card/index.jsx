@@ -3,8 +3,7 @@ import {
   ImgBg,
   CardCont,
   Row,
-  Button,
-  OutlineButton,
+  Button
 } from "./style";
 
 export const Card = (props) => {
@@ -17,7 +16,6 @@ export const Card = (props) => {
         </ImgBg>
         <CardCont>
           <Row>
-            <OutlineButton>Detalhes</OutlineButton>
             <Button>Comprar</Button>
           </Row>
           <div>
